@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'; 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 function NewCocktail({onAddCocktail}) {
@@ -9,6 +10,9 @@ function NewCocktail({onAddCocktail}) {
   const [imgURL, setImgURL] = useState('')
   const [ingredients, setIngredients] = useState('')
   const [directions, setDirections] = useState('')
+
+  const navigate = useNavigate()
+
   function handleSubmit(e){
     e.preventDefault()
     const newCocktail = {
@@ -26,7 +30,10 @@ function NewCocktail({onAddCocktail}) {
         body: JSON.stringify(newCocktail)
       })
       .then(r => r.json())
-      .then(cocktail => onAddCocktail(cocktail))
+      .then(cocktail => {
+      onAddCocktail(cocktail)
+      navigate.push("/drinklist")
+    })
   }
 
   return (

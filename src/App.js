@@ -26,7 +26,7 @@ console.log(cocktails)
       <NavBar />
       <Routes>
         <Route path="/home" element={<Home/>} />
-        <Route path="/cocktails" element={<DrinkList cocktails={cocktails} />} />
+        <Route path="/drinklist" element={<DrinkList margaritas={margaritas} />} />
         <Route path="/cocktails/:id"element={<CocktailCard cocktails={cocktails}/>}/>
        
         <Route path="/newcocktail" element={<NewCocktail onAddCocktail={addCocktail}/>} />
