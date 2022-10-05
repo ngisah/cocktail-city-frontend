@@ -32,7 +32,7 @@ function NewCocktail({onAddCocktail}) {
       .then(r => r.json())
       .then(cocktail => {
       onAddCocktail(cocktail)
-      navigate.push("/drinklist")
+      navigate("/cocktails")
     })
   }
 

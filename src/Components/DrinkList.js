@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './style.css'
-function DrinkList({ margaritas }) {
 
-  const renderMargaritas = margaritas.map((marg) => (
+function DrinkList({ cocktails }) {
+
+  const renderCocktails = cocktails.map((cocktail) => (
 
    
-    <div key={marg.id}>
+    <div key={cocktail.id}>
       <li>
-      <Link to={`/margaritas/${marg.id}`}>{marg.name}</Link>
+      <Link to={`/cocktails/${cocktail.id}`}>{cocktail.name}</Link>
       </li>
       <br></br>
     </div>
    )
   )
-return <ul>{renderMargaritas}</ul>
+return <ul>{renderCocktails}</ul>
 }
 export default DrinkList;
