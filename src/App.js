@@ -3,21 +3,21 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import { Routes, Route } from 'react-router-dom'
 import DrinkList from "./components/DrinkList";
-import NewMargarita from "./components/NewMargarita";
-import MargaritaCard from "./components/MargaritaCard"
+import NewCocktail from "./components/NewCocktail";
+import CocktailCard from "./components/CocktailCard"
 import { useState, useEffect } from "react";
 function App() {
-  const [margaritas, setMargaritas] = useState([])
+  const [cocktails, setCocktails] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/margaritas")
+    fetch("http://localhost:3000/cocktails")
     .then(r => r.json())
-    .then(margaritas => setMargaritas(margaritas))
+    .then(cocktails => setCocktails(cocktails))
   }, [])
 
-console.log(margaritas)
-  function addMargarita(newMargarita){
+console.log(cocktails)
+  function addCocktail(newCocktail){
     
-    setMargaritas([...margaritas,newMargarita])
+    setCocktails([...cocktails,newCocktail])
     
   }
 
@@ -26,10 +26,10 @@ console.log(margaritas)
       <NavBar />
       <Routes>
         <Route path="/home" element={<Home/>} />
-        <Route path="/margaritas" element={<DrinkList margaritas={margaritas} />} />
-        <Route path="/margaritas/:id"element={<MargaritaCard margaritas={margaritas}/>}/>
+        <Route path="/cocktails" element={<DrinkList cocktails={cocktails} />} />
+        <Route path="/cocktails/:id"element={<CocktailCard cocktails={cocktails}/>}/>
        
-        <Route path="/newmargarita" element={<NewMargarita onAddMargarita={addMargarita}/>} />
+        <Route path="/newcocktail" element={<NewCocktail onAddCocktail={addCocktail}/>} />
       </Routes>
     </div>
   );

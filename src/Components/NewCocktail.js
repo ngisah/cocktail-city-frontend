@@ -3,7 +3,7 @@ import './style.css';
 import { useState } from 'react';
 
 
-function NewMargarita({onAddMargarita}) {
+function NewCocktail({onAddCocktail}) {
 
   const [name, setName] = useState('')
   const [imgURL, setImgURL] = useState('')
@@ -11,15 +11,22 @@ function NewMargarita({onAddMargarita}) {
   const [directions, setDirections] = useState('')
   function handleSubmit(e){
     e.preventDefault()
-    const newMarg = {
+    const newCocktail = {
       name: name,
       ingredients: ingredients,
       directions: directions,
       image: imgURL
     }
 
-    console.log(newMarg)
-    onAddMargarita(newMarg)
+    fetch("http://localhost:3000/cocktails", {
+        method: 'POST',
+        headers: {
+          'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify(newCocktail)
+      })
+      .then(r => r.json())
+      .then(cocktail => onAddCocktail(cocktail))
   }
 
   return (
@@ -35,4 +42,4 @@ function NewMargarita({onAddMargarita}) {
 </div>
   )
 }
-export default NewMargarita;
+export default NewCocktail;
