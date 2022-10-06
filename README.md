@@ -6,9 +6,9 @@ Welcome to Cocktail City. When you visit this website you'll be able to browse t
 
 ## project Features
 
-It consist of 6 organized components; App, Home, NavBar, DrinkList, CocktailCard, and NewMargarita.
-It features 4 client-side routes (icluding a nested route), and programatic navigation.
-This application utilizes a RESTful API to render a list of drinks and makes a GET and a POST request to the json server.
+*It consist of 6 organized components; App, Home, NavBar, DrinkList, CocktailCard, and NewMargarita.
+*It features 4 client-side routes (icluding a nested route), and programatic navigation.
+*This application utilizes a RESTful API to render a list of drinks and makes a GET and a POST request to the json server.
 
 
 ### `npm test`
