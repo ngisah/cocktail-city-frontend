@@ -6,6 +6,8 @@ import DrinkList from "./components/DrinkList";
 import NewCocktail from "./components/NewCocktail";
 import CocktailCard from "./components/CocktailCard"
 import { useState, useEffect } from "react";
+
+
 function App() {
   const [cocktails, setCocktails] = useState([])
   useEffect(() => {
@@ -14,7 +16,7 @@ function App() {
     .then(cocktails => setCocktails(cocktails))
   }, [])
 
-console.log(cocktails)
+
   function addCocktail(newCocktail){
     
     setCocktails([...cocktails,newCocktail])
