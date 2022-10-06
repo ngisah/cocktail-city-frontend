@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
               <Button color="inherit" component={ Link } to="/">Home</Button>
               </Typography>
               <Button color="inherit" component={ Link } to="/cocktails">Cocktail List</Button>
-              <Button color="inherit">Add a Cocktail</Button>
+              <Button color="inherit" component={ Link } to="/newcocktail">Add a Cocktail</Button>
             </Toolbar>
             </Container>
           
