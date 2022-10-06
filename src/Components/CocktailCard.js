@@ -7,7 +7,7 @@ function CocktailCard({cocktails, onDrinkDelete}){
 
     
     const params = useParams();
-    const cocktail =  cocktails.find((ctail) => ctail.id == params.id);
+    const cocktail =  cocktails.find((ctail) => ctail.id === params.id);
     const navigate = useNavigate()
 
     function handleDelete() {

@@ -1,6 +1,5 @@
 .header {
   text-align: center;
-  color: rgb(255, 255, 255);
 }
 
 .image {
@@ -19,7 +18,7 @@
   font-family: cursive;
   font-size: 24px;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  
 }
 
 .web-description {
@@ -28,7 +27,6 @@
     font-size: 24px;
     text-align: center;
     font-weight: 100;
-    color: rgb(255, 255, 255);
   }
  
  .image {
