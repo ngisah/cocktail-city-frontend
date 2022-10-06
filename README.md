@@ -1,10 +1,8 @@
-# Getting Started with Create React App
+# Cocktail City
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
-
-In the project directory, you can run:
+Welcome to Cocktail City. When you visit this website you'll be able to browse through Cocktail recipes and add your own!
 
 ### `npm start`
 
