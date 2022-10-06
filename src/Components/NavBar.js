@@ -25,7 +25,7 @@ const useStyles = makeStyles(() => ({
               <Typography variant="h6" className={classes.title}>
               <Button color="inherit" component={ Link } to="/">Home</Button>
               </Typography>
-              <Button color="inherit">Cocktail List</Button>
+              <Button color="inherit" component={ Link } to="/cocktails">Cocktail List</Button>
               <Button color="inherit">Add a Cocktail</Button>
             </Toolbar>
             </Container>
