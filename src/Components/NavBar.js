@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 
     title: {
         paddingRight: '100px',

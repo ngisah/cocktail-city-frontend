@@ -9,19 +9,19 @@ import { useState, useEffect } from "react";
 
 
 function App() {
-  const [cocktails, setCocktails] = useState([])
+  const [cocktails, setCocktails] = useState([]);
   useEffect(() => {
     fetch("http://localhost:3000/cocktails")
     .then(r => r.json())
     .then(cocktails => setCocktails(cocktails))
-  }, [])
+  }, []);
 
 
   function addCocktail(newCocktail){
     
     setCocktails([...cocktails,newCocktail])
     
-  }
+  };
 
   return (
     <div className="App">
@@ -30,7 +30,6 @@ function App() {
         
         <Route path="/cocktails" element={<DrinkList cocktails={cocktails} />} />
         <Route path="/cocktails/:id"element={<CocktailCard cocktails={cocktails}/>}/>
-       
         <Route path="/newcocktail" element={<NewCocktail onAddCocktail={addCocktail}/>} />
         <Route path="/" element={<Home/>} />
       </Routes>

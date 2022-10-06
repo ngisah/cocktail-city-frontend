@@ -10,7 +10,7 @@ function Home() {
           "If you are in need of strong yet sweet Cocktails you've come to the right place! Cocktail City has amazing margarita recipes for you to try and enjoy. You can also save your favorites recipes by clicking on <em>"Add A Cocktail"</em> at the top of the website. "
         </p>
     </div>
-  )
-}
+  );
+};
 
 export default Home

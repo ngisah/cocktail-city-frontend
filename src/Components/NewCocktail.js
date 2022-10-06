@@ -34,7 +34,7 @@ function NewCocktail({onAddCocktail}) {
       onAddCocktail(cocktail)
       navigate("/cocktails")
     })
-  }
+  };
 
   return (
 <div  className='form-box'>

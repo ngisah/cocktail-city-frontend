@@ -2,11 +2,19 @@ import React from 'react'
 import { useParams } from "react-router-dom"
 import './style.css'
 
-function CocktailCard({cocktails}){
+function CocktailCard({cocktails, onDrinkDelete}){
 
-    console.log(cocktails)
-    const params = useParams()
-    const cocktail = cocktails[params.id - 1]
+    
+    const params = useParams();
+    const cocktail = cocktails[params.id - 1];
+
+    function handleDelete() {
+        fetch(`http://localhost:3000/cocktails/${cocktail.id}`, {
+          method: "DELETE"
+        }) 
+        .then(r => r.json())
+        .then(cocktail => onDrinkDelete(cocktail))
+      };
 
     return (
         <div className='text'>
@@ -18,8 +26,9 @@ function CocktailCard({cocktails}){
           <p>{cocktail?.ingredients}</p>
           Directions:
           <p>{cocktail?.directions}</p>
+          <button onClick={handleDelete}>Delete Recipe</button>
         </div>
-      )
-}
+      );
+};
 
 export default CocktailCard
