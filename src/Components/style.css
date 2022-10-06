@@ -17,6 +17,12 @@
     height: 100vh;
     padding-top: 30px;
   }
+  .cocktails {
+    margin-left: 100px;
+    margin-top: 80px;
+  
+  }
+  
   
   .form-box label{
     display: block;

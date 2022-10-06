@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./components/Home";
-import NavBar from "./components/NavBar";
+import Home from "./Components/Home";
+import NavBar from "./Components/NavBar";
 import { Routes, Route } from 'react-router-dom'
-import DrinkList from "./components/DrinkList";
-import NewCocktail from "./components/NewCocktail";
-import CocktailCard from "./components/CocktailCard"
+import DrinkList from "./Components/DrinkList";
+import NewCocktail from "./Components/NewCocktail";
+import CocktailCard from "./Components/CocktailCard"
 import { useState, useEffect } from "react";
 
 
@@ -27,11 +27,12 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/home" element={<Home/>} />
+        
         <Route path="/cocktails" element={<DrinkList cocktails={cocktails} />} />
         <Route path="/cocktails/:id"element={<CocktailCard cocktails={cocktails}/>}/>
        
         <Route path="/newcocktail" element={<NewCocktail onAddCocktail={addCocktail}/>} />
+        <Route path="/" element={<Home/>} />
       </Routes>
     </div>
   );

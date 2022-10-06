@@ -39,7 +39,7 @@ function NewCocktail({onAddCocktail}) {
   return (
 <div  className='form-box'>
   <form onSubmit={handleSubmit}>
-    <label>Add a Margarita</label>
+    <label>Add a Cocktail</label>
     <input className='form-input' type="text" name="name" placeholder="Name" onChange={e => setName(e.target.value)}/>
     <input className='form-input' type="text" name="img" placeholder="Image URL" onChange={e => setImgURL(e.target.value)}/>
     <input className='form-input2' type="text" name="ingredients" placeholder="Ingredients" onChange={e => setIngredients(e.target.value)}/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import React from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/container';
 import AppBar from '@material-ui/core/AppBar';
@@ -20,15 +20,16 @@ const useStyles = makeStyles((theme) => ({
     return (
       <div>
         <AppBar position="static" color="inherit">
-          <Container>
+          <container>
             <Toolbar>
               <Typography variant="h6" className={classes.title}>
-              <Button color="inherit" component={ Link } to="/home">Home</Button>
+              <Button color="inherit" component={ Link } to="/">Home</Button>
               </Typography>
               <Button color="inherit">Cocktail List</Button>
               <Button color="inherit">Add a Cocktail</Button>
             </Toolbar>
-          </Container>
+            </container>
+          
         </AppBar>
       </div>
     );
