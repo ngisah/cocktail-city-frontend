@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@mui/material/Container';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
     return (
       <div>
         <AppBar position="static" color="inherit">
-          <Container>
+          
             <Toolbar>
               <Typography variant="h6" className={classes.title}>
               <Button color="inherit" component={ Link } to="/">Home</Button>
@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
               <Button color="inherit" component={ Link } to="/cocktails">Cocktail List</Button>
               <Button color="inherit" component={ Link } to="/newcocktail">Add a Cocktail</Button>
             </Toolbar>
-            </Container>
+            
           
         </AppBar>
       </div>

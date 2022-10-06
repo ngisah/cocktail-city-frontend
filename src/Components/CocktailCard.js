@@ -2,11 +2,12 @@ import React from 'react'
 import { useNavigate, useParams } from "react-router-dom"
 import './style.css'
 
+
 function CocktailCard({cocktails, onDrinkDelete}){
 
     
     const params = useParams();
-    const cocktail = cocktails[params.id - 1];
+    const cocktail =  cocktails.find((ctail) => ctail.id == params.id);
     const navigate = useNavigate()
 
     function handleDelete() {
@@ -33,7 +34,7 @@ function CocktailCard({cocktails, onDrinkDelete}){
           <button onClick={handleDelete}>Delete Recipe</button>
         </div>
       )
-      
+
       : <p>Margarita not found</p>
       
 };
