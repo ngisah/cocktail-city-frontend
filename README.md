@@ -4,13 +4,12 @@
 
 Welcome to Cocktail City. When you visit this website you'll be able to browse through Cocktail recipes and add your own!
 
-### `npm start`
+## project Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It consist of 6 organized components; App, Home, NavBar, DrinkList, CocktailCard, and NewMargarita.
+It features 4 client-side routes (icluding a nested route), and programatic navigation.
+This application utilizes a RESTful API to render a list of drinks and makes a GET and a POST request to the json server.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
