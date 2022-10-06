@@ -9,12 +9,12 @@ function DrinkList({ cocktails }) {
         textDecorationThickness: '2px',
       };
 
-  const renderCocktails = cocktails.map((cocktail) => (
+  const renderCocktails = cocktails.map((ctail) => (
 
    
-    <div key={cocktail.id}>
+    <div key={ctail.id}>
       <li>
-      <Link to={`/cocktails/${cocktail.id}`} style={linkStyle}>{cocktail.name}</Link>
+      <Link to={`/cocktails/${ctail.id}`} style={linkStyle}>{ctail.name}</Link>
       </li>
       <br></br>
     </div>

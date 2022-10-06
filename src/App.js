@@ -23,13 +23,18 @@ function App() {
     
   };
 
+  function deleteRecipe(cocktail) {
+    const updatedCocktails = cocktails.filter(ctail => ctail.id !== cocktail.id)
+    setCocktails(updatedCocktails)
+  };
+
   return (
     <div className="App">
       <NavBar />
       <Routes>
         
         <Route path="/cocktails" element={<DrinkList cocktails={cocktails} />} />
-        <Route path="/cocktails/:id"element={<CocktailCard cocktails={cocktails}/>}/>
+        <Route path="/cocktails/:id"element={<CocktailCard cocktails={cocktails} onDrinkDelete={deleteRecipe}/>}/>
         <Route path="/newcocktail" element={<NewCocktail onAddCocktail={addCocktail}/>} />
         <Route path="/" element={<Home/>} />
       </Routes>
