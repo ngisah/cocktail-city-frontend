@@ -42,8 +42,8 @@ function NewCocktail({onAddCocktail}) {
     <label>Add a Cocktail</label>
     <input className='form-input' type="text" name="name" placeholder="Name" onChange={e => setName(e.target.value)}/>
     <input className='form-input' type="text" name="img" placeholder="Image URL" onChange={e => setImgURL(e.target.value)}/>
-    <input className='form-input2' type="text" name="ingredients" placeholder="Ingredients" onChange={e => setIngredients(e.target.value)}/>
-    <input className='form-input2' type="text" name="directions" placeholder="Directions" onChange={e => setDirections(e.target.value)}/>
+    <textarea className='form-input2' type="text" name="ingredients" placeholder="Ingredients" onChange={e => setIngredients(e.target.value)}/>
+    <textarea className='form-input2' type="text" name="directions" placeholder="Directions" onChange={e => setDirections(e.target.value)}/>
     <input type="submit" value="Submit" className='submit'/>
   </form>
 </div>
