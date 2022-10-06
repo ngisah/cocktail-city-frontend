@@ -1,20 +1,6 @@
 {
   "cocktails": [
     {
-      "id": 1,
-      "name": "Classic Margarita",
-      "ingredients": "1 lime wedge, plus 2 lime wheels for garnish, 1 tbsp coarse salt for glass rim, 4 oz blanco tequila, 2 oz Cointreau, 1 1/2 oz fresh juice from 2 limes ",
-      "directions": "Rim the glass using lime and salt. Set aside. In a cocktail shaker, combine tequila, Cointreau, and lime juice. Fill with ice and shake until thoroughly chilled, about 15 seconds (the bottom of a metal shaker should frost over).Fill glasses with fresh ice and strain margarita into both glasses. Garnish with lime wheels and serve. ",
-      "image": "https://www.seriouseats.com/thmb/uEgkydkRh3KM3d8erZ1lKrFO9tY=/880x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2015__04__20150323-cocktails-vicky-wasik-margarita-c84b154e757d43688de15dc8f8ca0de9.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Jalapeño Margarita",
-      "ingredients": "Salt and lime wedge to rim the glass, ice, 2oz tequila blanco, 2 tbsp freshly squeezed lime juice, 1 tbsp freshly squeed orange juice, 1 1/2  tsp light agave nectar, 1/2 jalapeño pepper.",
-      "directions": "Rim the glass using lime and salt. Set aside. Fill a cocktail shaker with ice. Add the tequila, lime juice, orange juice, agave, and jalapeño slices. Tightly close and shake vigorously for 30 seconds. Fill glasses with ice and strain into the rimmed glass. Garnish with lime wedges and additional jalapeño slices. .",
-      "image": "https://www.wellplated.com/wp-content/uploads/2017/05/Spicy-Jalapeno-Margarita-1.jpg"
-    },
-    {
       "id": 3,
       "name": "Frozen Strawberry-Basil Margarita",
       "ingredients": "1 lime wedge, coarse sugar (optional), 1 1/2 oz blanco tequila, 1 oz triple sec, 1/2 oz freshly squeezed lime juice, 1 cup frozen unsweetened sliced strawberries, 4 basil leaves, fresh strawberries (optional)",
@@ -27,6 +13,20 @@
       "ingredients": "2 oz tequila, 1 oz Grand Marnier or Cointreau, 1 oz passion fruit puree, 3/4 oz fresh lime juice, 3/4 oz simple syrup, tajin or salt for the rim, dehydrated lime slices for garnish.",
       "directions": "Rim the glass using lime and tajin. In a cocktail shaker, combine the tequila, grand marnier, passion fruit, lime, and simple syrup with a couple cubes of ice and shake vigorously. Fill glass with ice and strain into the prepared cocktail glass and garnish with a dehydrated lime slice, if desired.",
       "image": "https://somuchfoodblog.com/wp-content/uploads/2020/04/passion-fruit-marg6.jpg"
+    },
+    {
+      "name": "Long island iced tea",
+      "ingredients": "3/4 ounce vodka\n3/4 ounce white rum\n3/4 ounce silver tequila\n3/4 ounce gin\n3/4 ounce triple sec\n3/4 ounce simple syrup\n3/4 ounce lemon juice, freshly squeezed\nCola, to top\nGarnish: lemon wedg",
+      "directions": "Add the vodka, rum, tequila, gin, triple sec, simple syrup and lemon juice to a Collins glass filled with ice.\n\nTop with a splash of the cola and stir briefly.\n\nGarnish with a lemon wedge.\n\nServe with a straw.",
+      "image": "https://www.liquor.com/thmb/W-0WdQ_7ludkiEQVbKZi0snKoKM=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__03__14090749__Long-Island-Iced-Tea-720x720-article-272623f47e80457594178a552f708068.jpg",
+      "id": 5
+    },
+    {
+      "name": "Backyard iced tea",
+      "ingredients": "2 ounces spiced rum\n2 ounces lemonade\n1 ounce unsweetened iced tea\nGarnish: lemon wedge",
+      "directions": "Fill a highball glass with ice, then add the spiced rum, lemonade and unsweetened iced tea and stir to combine.\n\nGarnish with a lemon wedge.",
+      "image": "https://www.liquor.com/thmb/TYCpUHg6okALzYyMe35r6i4RyRI=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/backyard-iced-tea-720x720-primary-82a1bfeca64e49a880544b8b49297899.jpg",
+      "id": 6
     }
   ]
 }
