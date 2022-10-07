@@ -35,7 +35,7 @@ function CocktailCard({cocktails, onDrinkDelete}){
         </div>
       )
 
-      : <p>Margarita not found</p>
+      : <p>Cocktail not found</p>
       
 };
 
