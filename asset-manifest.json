@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cocktail-city-frontend/static/css/main.e189f1c2.css",
+    "main.js": "/cocktail-city-frontend/static/js/main.5081525a.js",
+    "static/js/787.28943a56.chunk.js": "/cocktail-city-frontend/static/js/787.28943a56.chunk.js",
+    "index.html": "/cocktail-city-frontend/index.html",
+    "main.e189f1c2.css.map": "/cocktail-city-frontend/static/css/main.e189f1c2.css.map",
+    "main.5081525a.js.map": "/cocktail-city-frontend/static/js/main.5081525a.js.map",
+    "787.28943a56.chunk.js.map": "/cocktail-city-frontend/static/js/787.28943a56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e189f1c2.css",
+    "static/js/main.5081525a.js"
+  ]
+}
