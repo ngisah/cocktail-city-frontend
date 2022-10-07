@@ -1,13 +1,14 @@
 import React from 'react'
-import { useNavigate, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import './style.css'
+import { useNavigate } from "react-router-dom"
 
 
 function CocktailCard({cocktails, onDrinkDelete}){
 
     
     const params = useParams();
-    const cocktail =  cocktails.find((ctail) => ctail.id === params.id);
+    const cocktail =  cocktails.find((ctail) => ctail.id == params.id);
     const navigate = useNavigate()
 
     function handleDelete() {
