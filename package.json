@@ -4,7 +4,7 @@
   "homepage": "https://ngisah.github.io/cocktail-city-frontend",
   "private": true,
   "engines": {
-    "node": "18.7.0",
+    "node": "16.16.0",
     "npm" :"8.15.0"
   },
   "dependencies": {
